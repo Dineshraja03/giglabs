@@ -1,28 +1,61 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground border-t-2 border-border">
-      <div className="container mx-auto px-6 py-16">
+    <footer className="bg-background border-t border-border">
+      {/* Brand Section */}
+      <div className="container mx-auto px-6 py-12 text-center border-b border-border">
+        <h3 className="text-2xl font-serif italic mb-2">Giglabs</h3>
+        <p className="text-sm text-muted-foreground">
+          Great ideas. Impeccable execution, memorable branding.
+        </p>
+        
+        {/* Social Links */}
+        <div className="flex justify-center gap-4 mt-6">
+          {["facebook", "linkedin", "instagram"].map((social) => (
+            <a
+              key={social}
+              href="#"
+              className="w-10 h-10 rounded-full border border-border flex items-center justify-center hover:border-accent hover:text-accent transition-colors"
+              aria-label={social}
+            >
+              <span className="sr-only">{social}</span>
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Links Grid */}
+      <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold mb-4">Giglabs</h3>
-            <p className="text-primary-foreground/80 text-sm">
-              Your partner for digital transformation and AI-powered solutions.
+          {/* CTA */}
+          <div>
+            <h4 className="text-3xl font-serif mb-4">
+              Let's <span className="text-accent italic">work</span>
+              <br />
+              together.
+            </h4>
+            <p className="text-sm text-muted-foreground mb-4">
+              Have an idea? Let's talk for the Next Big 
+              Thing! Or you're not sure where to start?
             </p>
+            <Link to="/contact" className="text-sm text-accent hover:underline underline-offset-4">
+              Let's talk →
+            </Link>
           </div>
 
-          {/* Company Links */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-bold mb-4 text-sm uppercase tracking-wide">Company</h4>
+            <h5 className="text-xs uppercase tracking-wider text-muted-foreground mb-4">Quick Links</h5>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Contact"].map((item) => (
+              {["Agency", "Projects", "Insights", "Career", "FAQ"].map((item) => (
                 <li key={item}>
                   <Link
-                    to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                    className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    to="/"
+                    className="text-sm text-foreground hover:text-accent transition-colors"
                   >
                     {item}
                   </Link>
@@ -31,21 +64,15 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services Links */}
+          {/* Services */}
           <div>
-            <h4 className="font-bold mb-4 text-sm uppercase tracking-wide">Services</h4>
+            <h5 className="text-xs uppercase tracking-wider text-muted-foreground mb-4">Services</h5>
             <ul className="space-y-3">
-              {[
-                "Application Services",
-                "Data & AI",
-                "Cloud",
-                "Enterprise Solutions",
-                "Consulting",
-              ].map((item) => (
+              {["Web design", "App Design", "UI/UX Design", "Development"].map((item) => (
                 <li key={item}>
                   <Link
                     to="/services"
-                    className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                    className="text-sm text-foreground hover:text-accent transition-colors"
                   >
                     {item}
                   </Link>
@@ -54,30 +81,35 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h4 className="font-bold mb-4 text-sm uppercase tracking-wide">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
-                <MapPin size={16} />
+            <h5 className="text-xs uppercase tracking-wider text-muted-foreground mb-4">Contact Us</h5>
+            <ul className="space-y-3 text-sm">
+              <li className="text-muted-foreground">
                 Mangalore, India
               </li>
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
-                <Phone size={16} />
-                +91 824 3539291
+              <li>
+                <a href="mailto:info@giglabs.tech" className="hover:text-accent transition-colors">
+                  info@giglabs.tech
+                </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
-                <Mail size={16} />
-                info@giglabs.tech
+              <li>
+                <a href="tel:+918243539291" className="hover:text-accent transition-colors">
+                  +91 824 3539291
+                </a>
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/60">
-            © {new Date().getFullYear()} Gigabyte Labs Pvt Ltd. All Rights Reserved.
-          </p>
+      {/* Bottom Bar */}
+      <div className="container mx-auto px-6 py-6 border-t border-border">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+          <p>© {new Date().getFullYear()} Gigabyte Labs Pvt Ltd. All Rights Reserved</p>
+          <Link to="/" className="hover:text-accent transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
