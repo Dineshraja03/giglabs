@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center">
           {/* Main headline */}
           <div className="mb-12">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-white dark:via-slate-100 dark:to-white">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-white dark:via-slate-100 dark:to-white">
               Sustainable solution for
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
                 mindful brands.

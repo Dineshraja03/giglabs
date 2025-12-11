@@ -47,7 +47,7 @@ const ProjectsSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="max-w-4xl mx-auto mb-24">
+        <div className="max-w-4xl mx-auto mb-24 text-center">
           <div className="inline-block mb-6">
             <span className="text-xs font-mono uppercase tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 font-bold">
               Featured Work
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
           <h2 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-white dark:via-slate-100 dark:to-white">
             Our Latest <span className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
             Explore our recent work showcasing innovative design and development solutions that drive real results for ambitious brands
           </p>
         </div>

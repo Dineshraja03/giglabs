@@ -1,4 +1,4 @@
-import { Lightbulb, Search, Palette, Brush, Code, ArrowRight } from "lucide-react";
+import { Lightbulb, Search, Palette, Brush, Code, Rocket, ArrowRight } from "lucide-react";
 
 const processes = [
   {
@@ -36,9 +36,9 @@ const processes = [
   },
   {
     id: "04",
-    title: "UI Design",
-    icon: Brush,
-    description: "Creating beautiful, pixel-perfect interfaces that bring your brand to life and delight your users.",
+    title: "Development",
+    icon: Code,
+    description: "Building robust, scalable solutions using cutting-edge technologies and best practices.",
     color: "from-green-500 to-emerald-500",
     bgColor: "from-green-100/50 to-emerald-100/50",
     darkBgColor: "dark:from-green-900/20 dark:to-emerald-900/20",
@@ -47,9 +47,9 @@ const processes = [
   },
   {
     id: "05",
-    title: "Development",
-    icon: Code,
-    description: "Building robust, scalable solutions using cutting-edge technologies and best practices.",
+    title: "Deployment",
+    icon: Rocket,
+    description: "Launching your solution with confidence and ensuring smooth rollout across all platforms and channels.",
     color: "from-indigo-500 to-blue-500",
     bgColor: "from-indigo-100/50 to-blue-100/50",
     darkBgColor: "dark:from-indigo-900/20 dark:to-blue-900/20",

@@ -1,5 +1,13 @@
 import { Code, Brain, Cloud, Cog, Building2, Lightbulb, Zap, Palette, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import ApplicationServicesImg from "@/assets/services/application services.png";
+import DataImg from "@/assets/services/data.png";
+import CloudImg from "@/assets/services/cloud services.png";
+import BusinessProcessImg from "@/assets/services/Business Process Services.png";
+import EnterpriseImg from "@/assets/services/Enterprise Solutions.png";
+import ConsultingImg from "@/assets/services/consulting services.png";
+import FullStackImg from "@/assets/services/fullstack.png";
+import UIUXImg from "@/assets/services/uiux.webp";
 
 const HomeServicesSection = () => {
   const services = [
@@ -8,7 +16,7 @@ const HomeServicesSection = () => {
       title: "Application Services",
       description: "By leveraging modern software engineering principles, deep industry expertise and strategic partnership networks, we help our clients do more and think big",
       icon: Code,
-      image: "/placeholder.png",
+      image: ApplicationServicesImg,
       color: "from-blue-500 to-cyan-500",
       bgColor: "from-blue-100/50 to-cyan-100/50",
       borderColor: "border-blue-200 dark:border-blue-800",
@@ -18,7 +26,7 @@ const HomeServicesSection = () => {
       title: "Data and AI",
       description: "We partner with our clients to drive solutions for their most pressing problems, no matter where you are on your data and AI journey, we'll meet you there",
       icon: Brain,
-      image: "/placeholder.png",
+      image: DataImg,
       color: "from-purple-500 to-pink-500",
       bgColor: "from-purple-100/50 to-pink-100/50",
       borderColor: "border-purple-200 dark:border-purple-800",
@@ -28,7 +36,7 @@ const HomeServicesSection = () => {
       title: "Cloud Services",
       description: "We help you in finding the right balance of public, private or hybrid cloud that benefits your business the most.",
       icon: Cloud,
-      image: "/placeholder.png",
+      image: CloudImg,
       color: "from-orange-500 to-red-500",
       bgColor: "from-orange-100/50 to-red-100/50",
       borderColor: "border-orange-200 dark:border-orange-800",
@@ -38,7 +46,7 @@ const HomeServicesSection = () => {
       title: "Business Process Services",
       description: "Harness the exciting potential of new technologies, data and human ingenuity, so as to unlock value or shape change in the operating systems of large enterprises.",
       icon: Cog,
-      image: "/placeholder.png",
+      image: BusinessProcessImg,
       color: "from-green-500 to-emerald-500",
       bgColor: "from-green-100/50 to-emerald-100/50",
       borderColor: "border-green-200 dark:border-green-800",
@@ -48,7 +56,7 @@ const HomeServicesSection = () => {
       title: "Enterprise Solutions",
       description: "We assists clients in designing modern business framework to maximize the value for clients in every aspect to improve efficiency and increase productivity.",
       icon: Building2,
-      image: "/placeholder.png",
+      image: EnterpriseImg,
       color: "from-indigo-500 to-purple-500",
       bgColor: "from-indigo-100/50 to-purple-100/50",
       borderColor: "border-indigo-200 dark:border-indigo-800",
@@ -58,7 +66,7 @@ const HomeServicesSection = () => {
       title: "Consulting",
       description: "Experience that propels you forward. You can reimagine your organization and take cloud-based transformation to the next level.",
       icon: Lightbulb,
-      image: "/placeholder.png",
+      image: ConsultingImg,
       color: "from-pink-500 to-rose-500",
       bgColor: "from-pink-100/50 to-rose-100/50",
       borderColor: "border-pink-200 dark:border-pink-800",
@@ -68,7 +76,7 @@ const HomeServicesSection = () => {
       title: "Full Stack Development",
       description: "End-to-end development solutions from frontend to backend, creating robust and scalable applications that drive your business forward.",
       icon: Zap,
-      image: "/placeholder.png",
+      image: FullStackImg,
       color: "from-yellow-500 to-amber-500",
       bgColor: "from-yellow-100/50 to-amber-100/50",
       borderColor: "border-yellow-200 dark:border-yellow-800",
@@ -78,7 +86,7 @@ const HomeServicesSection = () => {
       title: "UI/UX Designing",
       description: "Create beautiful and intuitive user experiences that captivate your audience and drive engagement with thoughtful, user-centric design.",
       icon: Palette,
-      image: "/placeholder.png",
+      image: UIUXImg,
       color: "from-red-500 to-pink-500",
       bgColor: "from-red-100/50 to-pink-100/50",
       borderColor: "border-red-200 dark:border-red-800",

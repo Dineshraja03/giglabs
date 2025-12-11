@@ -9,6 +9,14 @@ import CloudServicesDetail from "@/components/services/CloudServicesDetail";
 import BusinessProcessDetail from "@/components/services/BusinessProcessDetail";
 import EnterpriseDetail from "@/components/services/EnterpriseDetail";
 import ConsultingDetail from "@/components/services/ConsultingDetail";
+import ApplicationServicesImg from "@/assets/services/application services.png";
+import DataImg from "@/assets/services/data.png";
+import CloudImg from "@/assets/services/cloud services.png";
+import BusinessProcessImg from "@/assets/services/Business Process Services.png";
+import EnterpriseImg from "@/assets/services/Enterprise Solutions.png";
+import ConsultingImg from "@/assets/services/consulting services.png";
+import FullStackImg from "@/assets/services/fullstack.png";
+import UIUXImg from "@/assets/services/uiux.webp";
 
 const servicesList = [
   {
@@ -19,7 +27,7 @@ const servicesList = [
     color: "from-blue-500 to-cyan-500",
     bgColor: "from-blue-100/50 to-cyan-100/50",
     borderColor: "border-blue-200 dark:border-blue-800",
-    image: "/placeholder.png",
+    image: ApplicationServicesImg,
     component: ApplicationServicesDetail,
   },
   {
@@ -30,7 +38,7 @@ const servicesList = [
     color: "from-purple-500 to-pink-500",
     bgColor: "from-purple-100/50 to-pink-100/50",
     borderColor: "border-purple-200 dark:border-purple-800",
-    image: "/placeholder.png",
+    image: DataImg,
     component: DataAIDetail,
   },
   {
@@ -41,7 +49,7 @@ const servicesList = [
     color: "from-orange-500 to-red-500",
     bgColor: "from-orange-100/50 to-red-100/50",
     borderColor: "border-orange-200 dark:border-orange-800",
-    image: "/placeholder.png",
+    image: CloudImg,
     component: CloudServicesDetail,
   },
   {
@@ -52,7 +60,7 @@ const servicesList = [
     color: "from-green-500 to-emerald-500",
     bgColor: "from-green-100/50 to-emerald-100/50",
     borderColor: "border-green-200 dark:border-green-800",
-    image: "/placeholder.png",
+    image: BusinessProcessImg,
     component: BusinessProcessDetail,
   },
   {
@@ -63,7 +71,7 @@ const servicesList = [
     color: "from-indigo-500 to-purple-500",
     bgColor: "from-indigo-100/50 to-purple-100/50",
     borderColor: "border-indigo-200 dark:border-indigo-800",
-    image: "/placeholder.png",
+    image: EnterpriseImg,
     component: EnterpriseDetail,
   },
   {
@@ -74,7 +82,7 @@ const servicesList = [
     color: "from-pink-500 to-rose-500",
     bgColor: "from-pink-100/50 to-rose-100/50",
     borderColor: "border-pink-200 dark:border-pink-800",
-    image: "/placeholder.png",
+    image: ConsultingImg,
     component: ConsultingDetail,
   },
   {
@@ -85,7 +93,7 @@ const servicesList = [
     color: "from-yellow-500 to-amber-500",
     bgColor: "from-yellow-100/50 to-amber-100/50",
     borderColor: "border-yellow-200 dark:border-yellow-800",
-    image: "/placeholder.png",
+    image: FullStackImg,
     component: ConsultingDetail,
   },
   {
@@ -96,7 +104,7 @@ const servicesList = [
     color: "from-red-500 to-pink-500",
     bgColor: "from-red-100/50 to-pink-100/50",
     borderColor: "border-red-200 dark:border-red-800",
-    image: "/placeholder.png",
+    image: UIUXImg,
     component: ConsultingDetail,
   },
 ];
